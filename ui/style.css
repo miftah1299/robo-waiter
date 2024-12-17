@@ -1,0 +1,14 @@
+body {
+    background: linear-gradient(135deg, #6a0dad, #483d8b, #ff69b4);
+    color: rgb(31, 3, 102);
+}
+
+.nav-pills .nav-link.active {
+    background-color: #ff69b4;
+}
+
+header,
+footer {
+    background-color: rgba(57, 36, 195, 0.9);
+    /* Semi-transparent dark blue */
+}
