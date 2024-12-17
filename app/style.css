@@ -39,17 +39,17 @@ body {
 }
 
 .kitchen {
-    background-image: url("./kitchen (1).png");
+    background-image: url("./assets/kitchen.png");
     background-size: cover;
 }
 
 .food {
-    background-image: url("table (2).png");
+    background-image: url("./assets/table.png");
     background-size: cover;
 }
 
 .active-waiter {
-    background: url("./robot.png");
+    background: url("./assets/robot.png");
     background-size: cover;
 }
 
