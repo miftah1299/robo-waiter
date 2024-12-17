@@ -1,5 +1,7 @@
+/* Add a gradient background to the body */
 body {
-    background: linear-gradient(135deg, #6a0dad, #483d8b, #ff69b4);
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(73, 99, 152, 1) 100%);
     color: rgb(31, 3, 102);
 }
 
@@ -68,6 +70,6 @@ body {
 
 header,
 footer {
-    background-color: rgba(57, 36, 195, 0.9);
+    background-color: #3c3b6e;
     /* Semi-transparent dark blue */
 }
