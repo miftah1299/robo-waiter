@@ -3,6 +3,65 @@ body {
     color: rgb(31, 3, 102);
 }
 
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    width: 630px;
+    height: 594px;
+    margin: 0 auto;
+}
+
+.square {
+    width: 70px;
+    height: 66px;
+}
+
+.black {
+    background-color: #5c3a78;
+    /* Darker purple for black squares */
+}
+
+.white {
+    background-color: #cfc2e0;
+    /* Light purple for white squares */
+}
+
+.wall {
+    background-color: #3c3b6e;
+    /* Dark blue for walls */
+}
+
+.kitchen {
+    background-image: url("./kitchen (1).png");
+    background-size: cover;
+}
+
+.food {
+    background-image: url("table (2).png");
+    background-size: cover;
+}
+
+.active-waiter {
+    background: url("./robot.png");
+    background-size: cover;
+}
+
+/* Update button and text colors to match the gradient theme */
+.btn-primary {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+}
+
+.btn-primary:hover {
+    background-color: #d3569d;
+    border-color: #d3569d;
+}
+
+.nav-pills .nav-link {
+    color: #fff;
+}
+
 .nav-pills .nav-link.active {
     background-color: #ff69b4;
 }
