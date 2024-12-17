@@ -38,3 +38,25 @@ Robo Waiter is a Flask-based application designed to simulate a robotic waiter n
     ```sh
     pip install flask-cors
     ```
+
+## Usage
+
+1. Run the Flask application:
+
+    ```sh
+    python -m flask --app main run --debug
+    ```
+
+2. Open your web browser and navigate to http://127.0.0.1:5000 to access the application.
+
+3. Run the server in debugging mode by executing the following command:
+
+    ```sh
+    flask --app main run --debug
+    ```
+
+4. Navigate to the `ui` folder and start the live server using the VSCode Live Server extension.
+
+Ensure you have Python installed on your machine before running the project.
+
+Enjoy using the Robo Waiter!
