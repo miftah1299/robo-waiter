@@ -187,4 +187,32 @@ class Algo:
         if not found_dest:
             print("Failed to find the destination cell")
 
+    def get_details(self, orders):
+        table_numbers = []
+        information = []
+        for order in orders:
+            table_number = int(order["tableNumber"].replace("t", "")) - 1
+            table_numbers.append(table_number)
+            food_items = order["foodItems"]
+            total_time = 0
+            for food_item in food_items:
+                food_id = int(food_item["id"]) - 1
+                quantity = food_item["quantity"]
+                total_time += self.foodMakingTime[food_id] * quantity
+            information.append(
+                {
+                    "table": f"t{table_number + 1}",
+                    "target": self.targets[table_number],
+                    "time": total_time,
+                    "cost": 0,
+                    "path": [],
+                }
+            )
+        self.construct_matrix(table_numbers)
+        for info in information:
+            self.a_star_search(info["target"])
+            info["path"] = self.path
+            info["cost"] = len(self.path) - 1
+
+        return information
     
