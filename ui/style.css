@@ -1,8 +1,12 @@
 /* Add a gradient background to the body */
 body {
     background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(73, 99, 152, 1) 100%);
-    color: rgb(31, 3, 102);
+    background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(73, 99, 152, 1) 100%
+    );
+    color: #1f0366;
 }
 
 .chessboard {
@@ -71,5 +75,5 @@ body {
 header,
 footer {
     background-color: #3c3b6e;
-    /* Semi-transparent dark blue */
+    /* Dark blue for header and footer */
 }
